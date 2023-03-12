@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Payment_for_ExploreLanka</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="card_payment">Card payment</string>
+    <string name="card_payment_RB">Card payment</string>
+    <string name="paypal_pay">Paypal payment</string>
+</resources>
