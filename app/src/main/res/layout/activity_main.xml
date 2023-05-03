@@ -7,79 +7,129 @@
     android:background="#CDC5C5"
     tools:context=".MainActivity">
 
-    <RadioButton
-        android:id="@+id/cardPay_RB"
-        android:layout_width="240dp"
-        android:layout_height="47dp"
-        android:text="@string/card_payment_RB"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="278dp" />
-
     <TextView
         android:id="@+id/tv_paymentMethod"
-        android:layout_width="411dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:background="#BD9F9F"
-        android:paddingTop="10dp"
+        android:paddingTop="6dp"
         android:text="@string/payment_method"
         android:textAlignment="center"
-        android:textColor="#2C1B1B"
-        android:textSize="24sp"
-        android:textStyle="italic"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="14dp" />
+        android:textColor="@color/TopicColor_ofEachPage"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/back_btn"
+        android:id="@+id/menu_btnPayment"
         android:layout_width="61dp"
-        android:layout_height="46dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/topic_backgound"
+        android:contentDescription="@string/menue_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_icon" />
+
+    <ImageButton
+        android:id="@+id/paymentMethodBack_btn"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
         android:backgroundTint="#BC9E9E"
+        android:contentDescription="@string/paymentMethod_backBtnDescription"
         android:scaleType="centerInside"
-        app:srcCompat="@drawable/back_button"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/tv_paymentMethod"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/back_button" />
 
     <ImageButton
-        android:id="@+id/cardPay_btn"
-        android:layout_width="373dp"
-        android:layout_height="168dp"
+        android:id="@+id/cardPay_imgbtn"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="20dp"
         android:backgroundTint="#FEFEFE"
+        android:contentDescription="@string/cardPayBtn_discription"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/card_payment_logo1"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="110dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_paymentMethod"
+        app:srcCompat="@drawable/card_payment_logo1" />
 
-    <TextView
-        android:id="@+id/tv_cardPayment"
-        android:layout_width="160dp"
-        android:layout_height="32dp"
-        android:text="@string/card_payment"
-        android:textColor="#041B7E"
-        android:textSize="16sp"
-        android:textStyle="bold|italic"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="122dp" />
-
-    <RadioButton
-        android:id="@+id/paypal_RB"
-        android:layout_width="240dp"
-        android:layout_height="47dp"
-        android:text="@string/paypal_pay"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="531dp" />
+    <Button
+        android:id="@+id/cardPayment_btn2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/card_pay_btnText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardPay_imgbtn" />
 
     <ImageButton
-        android:id="@+id/paypal_btn"
-        android:layout_width="373dp"
-        android:layout_height="168dp"
+        android:id="@+id/paypal_imgbtn"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="20dp"
         android:backgroundTint="#FEFEFE"
+        android:contentDescription="@string/paypalBtn_discription"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/paypal_payment_logo_"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="351dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardPayment_btn2"
+        app:srcCompat="@drawable/paypal_payment_logo_" />
+
+    <Button
+        android:id="@+id/cashPay_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="120dp"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/cashPayBtn_text1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cashPayment_imgbtn" />
+
+    <Button
+        android:id="@+id/paypalPay_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="120dp"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/paypalPayBtn_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paypal_imgbtn" />
+
+    <ImageButton
+        android:id="@+id/cashPayment_imgbtn"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#FEFEFE"
+        android:contentDescription="@string/cashPayBtn_discription"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paypalPay_btn"
+        app:srcCompat="@drawable/pay_with_cash_logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

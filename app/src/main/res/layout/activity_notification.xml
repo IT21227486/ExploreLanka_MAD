@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    tools:context=".NotificationActivity">
+
+    <TextView
+        android:id="@+id/notification_tv5"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="41dp"
+        android:background="#E997AFB5"
+        android:paddingLeft="2dp"
+        android:paddingTop="6dp"
+        android:text="@string/notice5"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notice_date1_tv5" />
+
+    <TextView
+        android:id="@+id/notice_date1_tv5"
+        android:layout_width="133dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/date_notic_5"
+        android:textColor="@color/textColor"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notification_tv4" />
+
+    <TextView
+        android:id="@+id/notification_tv4"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="41dp"
+        android:background="#E997AFB5"
+        android:paddingLeft="2dp"
+        android:paddingTop="6dp"
+        android:text="@string/notice4"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notice_date1_tv4" />
+
+    <TextView
+        android:id="@+id/notice_date1_tv4"
+        android:layout_width="133dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/date_notic_4"
+        android:textColor="@color/textColor"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notification_tv3" />
+
+    <TextView
+        android:id="@+id/notification_tv3"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:background="#E997AFB5"
+        android:paddingLeft="2dp"
+        android:paddingTop="6dp"
+        android:text="@string/notice3"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notice_date1_tv3" />
+
+    <TextView
+        android:id="@+id/notice_date1_tv3"
+        android:layout_width="133dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/date_notic_3"
+        android:textColor="@color/textColor"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notification_tv2" />
+
+    <TextView
+        android:id="@+id/notification_tv2"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:background="#E997AFB5"
+        android:paddingLeft="2dp"
+        android:paddingTop="6dp"
+        android:text="@string/notice2"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notice_date1_tv2" />
+
+    <TextView
+        android:id="@+id/tv_notificationTopic"
+        android:layout_width="411dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#BD9F9F"
+        android:paddingTop="10dp"
+        android:text="@string/Notification_topic"
+        android:textAlignment="center"
+        android:textColor="@color/TopicColor_ofEachPage"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/menu_btnNotification"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/topic_backgound"
+        android:contentDescription="@string/menue_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_icon" />
+
+    <ImageButton
+        android:id="@+id/notificationBack_btn"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#BC9E9E"
+        android:contentDescription="@string/notification_BckBtn_discription"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_notificationTopic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
+    <TextView
+        android:id="@+id/notification_tv1"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:background="#E997AFB5"
+        android:paddingLeft="2dp"
+        android:paddingTop="6dp"
+        android:text="@string/notice1"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notice_date1_tv1" />
+
+    <TextView
+        android:id="@+id/notice_date1_tv1"
+        android:layout_width="133dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/date_notic_1"
+        android:textColor="@color/textColor"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/notification_tv1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notificationTopic" />
+
+    <TextView
+        android:id="@+id/notice_date1_tv2"
+        android:layout_width="133dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/date_notic_2"
+        android:textColor="@color/textColor"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notification_tv1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardOnwerPhone_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgrundColor"
+    tools:context=".CardPaymentActivity">
+
+    <TextView
+        android:id="@+id/tv_PayWithCardTopic"
+        android:layout_width="411dp"
+        android:layout_height="48dp"
+        android:background="@color/topic_backgound"
+        android:paddingTop="10dp"
+        android:text="@string/CardPaymentTopic_text"
+        android:textAlignment="center"
+        android:textColor="@color/TopicColor_ofEachPage"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/menu_btnCard"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/topic_backgound"
+        android:contentDescription="@string/menue_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_icon" />
+
+    <ImageButton
+        android:id="@+id/cardPay_backBtn"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#BC9E9E"
+        android:contentDescription="@string/cardPayBtn_discription"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_PayWithCardTopic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
+    <ImageButton
+        android:id="@+id/masterCard_imgBtn"
+        android:layout_width="122dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="6dp"
+        android:contentDescription="@string/masterCardBtn_contentDes"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/visaCard_imgBtn"
+        app:layout_constraintTop_toBottomOf="@+id/tv_PayWithCardTopic"
+        app:srcCompat="@drawable/mastercard_logo" />
+
+    <EditText
+        android:id="@+id/cardOwnerPhone_text"
+        android:layout_width="369dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardexpDate_text" />
+
+    <EditText
+        android:id="@+id/cardCvvNum_text"
+        android:layout_width="180dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="CVV number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumber_text" />
+
+    <EditText
+        android:id="@+id/cardexpDate_text"
+        android:layout_width="180dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Expiry Date (mm/yy)"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumber_text" />
+
+    <EditText
+        android:id="@+id/cardNumber_text"
+        android:layout_width="369dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Card Number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameOnCart_text" />
+
+    <EditText
+        android:id="@+id/nameOnCart_text"
+        android:layout_width="369dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Name on Card"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visaCard_imgBtn" />
+
+    <ImageButton
+        android:id="@+id/americanExpres_imgBtn"
+
+        android:layout_width="122dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="6dp"
+        android:contentDescription="@string/americanExpressCardBtn_contentDes"
+        android:scaleType="fitCenter"
+
+        app:layout_constraintEnd_toStartOf="@+id/masterCard_imgBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_PayWithCardTopic"
+        app:srcCompat="@drawable/american_express_logo" />
+
+    <ImageButton
+        android:id="@+id/visaCard_imgBtn"
+        android:layout_width="122dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/visaCardBtn_contentDes"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_PayWithCardTopic"
+        app:srcCompat="@drawable/visacard_logo" />
+
+    <CheckBox
+        android:id="@+id/confirm_CB"
+        android:layout_width="369dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/checkBoc_codition"
+        android:textColor="@color/textColor"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalIncardPay_value" />
+
+    <Button
+        android:id="@+id/finalPay_btn"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/cardPayBtn_text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_CB" />
+
+    <EditText
+        android:id="@+id/totalIncardPay_value"
+        android:layout_width="369dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/total_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardOwnerPhone_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDC5C5"
+    android:textAlignment="textStart"
+    tools:context=".PaypalActivity">
+
+    <EditText
+        android:id="@+id/totalInPaypalPay_value"
+        android:layout_width="369dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/total_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paypalOwnerPhone_text" />
+
+    <TextView
+        android:id="@+id/tv_PaypalTopic"
+        android:layout_width="411dp"
+        android:layout_height="48dp"
+        android:background="#BD9F9F"
+        android:paddingTop="10dp"
+        android:text="@string/paypal_payTopic"
+        android:textAlignment="center"
+        android:textColor="@color/TopicColor_ofEachPage"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/menu_btnPaypal"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/topic_backgound"
+        android:contentDescription="@string/menue_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_icon" />
+
+    <ImageButton
+        android:id="@+id/paypalBack_btn"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#BC9E9E"
+        android:contentDescription="@string/cashPayBackBtnContent"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_PaypalTopic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
+    <ImageView
+        android:id="@+id/paypalLogo_img"
+        android:layout_width="0dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="72dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_PaypalTopic"
+        app:srcCompat="@drawable/paypal_payment_pic" />
+
+    <TextView
+        android:id="@+id/paypalOfficial_text"
+        android:layout_width="370dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="21dp"
+        android:background="@color/topic_backgound"
+        android:paddingTop="10dp"
+        android:text="@string/paypalOfficailDescription"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalInPaypalPay_value" />
+
+    <EditText
+        android:id="@+id/nameOnPaypal_text"
+        android:layout_width="369dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Owner name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paypalLogo_img" />
+
+    <EditText
+        android:id="@+id/paypalOwnerPhone_text"
+        android:layout_width="369dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="phone Number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailOnPaypal_text" />
+
+    <EditText
+        android:id="@+id/emailOnPaypal_text"
+        android:layout_width="369dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Emial Address (paypal)"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameOnPaypal_text" />
+
+    <Button
+        android:id="@+id/paypalProceed_btn"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/paypalBtn_tevt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paypalOfficial_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1B9B9"
+    android:paddingLeft="5dp"
+    tools:context=".MarketPlace_activity">
+
+    <TextView
+        android:id="@+id/tv_MarketPlaceTopic"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/topic_backgound"
+        android:paddingTop="10dp"
+        android:text="@string/MarketPlace_topic"
+        android:textAlignment="center"
+        android:textColor="@color/TopicColor_ofEachPage"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/menu_btnMarket"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/topic_backgound"
+        android:contentDescription="@string/menue_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_icon" />
+
+    <ImageButton
+        android:id="@+id/marketPlaceBck_brn"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#BC9E9E"
+        android:contentDescription="@string/marketPlc_BckBtn_discription"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/marketPlcaeDesc_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
+    <TextView
+        android:id="@+id/marketPlcaeDesc_tv"
+        android:layout_width="385dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/background_pic"
+        android:fontFamily="@font/aladin"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/MarketPlace_Description"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtileMarket_imgBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_MarketPlaceTopic" />
+
+    <ImageButton
+        android:id="@+id/medicineMarket_imgBtn"
+        android:layout_width="188dp"
+        android:layout_height="193dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/medicineBtn"
+        android:scaleType="centerInside"
+        app:constraint_referenced_tags="@string/medicineBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/medicinemarket_img" />
+
+    <ImageButton
+        android:id="@+id/seaMarket_imgBtn"
+        android:layout_width="188dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="28dp"
+        android:contentDescription="@string/seaBtn"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/medicineMarket_imgBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marketPlcaeDesc_tv"
+        app:srcCompat="@drawable/seafoodmarket_img" />
+
+    <ImageButton
+        android:id="@+id/txtileMarket_imgBtn"
+        android:layout_width="188dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="28dp"
+        android:contentDescription="@string/textileBtn"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/spicesMarket_imgBtn"
+        app:layout_constraintEnd_toStartOf="@+id/seaMarket_imgBtn"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/textilemarket_img" />
+
+    <ImageButton
+        android:id="@+id/spicesMarket_imgBtn"
+        android:layout_width="188dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/spicesBtn"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/medicineMarket_imgBtn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/spicesmarket_img" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

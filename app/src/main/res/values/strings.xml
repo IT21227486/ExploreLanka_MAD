@@ -1,7 +1,117 @@
 <resources>
     <string name="app_name">Payment_for_ExploreLanka</string>
+
     <string name="payment_method">Payment Method</string>
-    <string name="card_payment">Card payment</string>
+    <string name="paymentMethod_backBtnDescription">Go to the previous/back page.</string>
+    <string name="card_pay_btnText">Card Payment</string>
     <string name="card_payment_RB">Card payment</string>
+    <string name="paypalPayBtn_text">Paypal Payment</string>
+    <string name="cashPayBtn_text1">Cash Payment</string>
+
+    <string name="CardPaymentTopic_text">Pay with Card</string>
+    <string name="cardPayBtn_discription">Click here to Enter card payment page</string>
+    <string name="masterCardBtn_contentDes">click to enter master card details</string>
+    <string name="visaCardBtn_contentDes">click to enter visa card details</string>
+    <string name="americanExpressCardBtn_contentDes">click to enter American express card details</string>
+    <string name="card_pay_text">Pay with card</string>
+    <string name="total_text">Total:- 0.00$</string>
+    <string name="checkBoc_codition">I hereby acknowledge that above mentioned information is correct.</string>
+    <string name="cardPayBtn_text">Pay</string>
+
+    <string name="paypal_payTopic">Paypal Payment</string>
     <string name="paypal_pay">Paypal payment</string>
+    <string name="paypalBtn_discription">Click here to enter paypal payment page</string>
+    <string name="paypalOfficailDescription">Use below information in your paypal transfer.\n
+        Email: explorelanka@gmail.com\nuserID: Explore Lanka
+        </string>
+    <string name="paypalBtn_tevt">Proceed</string>
+
+
+    <string name="cashPayment_text">Cash Payment</string>
+    <string name="cashPayBtn_discription">Click here to Enter cash payment page</string>
+    <string name="cashPay_description">You can pay when you reach us !!</string>
+    <string name="cashTotal_text">Total:- 0.00$</string>
+    <string name="cashPayCondition_text">I agree for terms and condition of cash pay</string>
+    <string name="cashPay_btn">Confirm</string>
+
+
+    <string name="bookSuccess_topic">Booking Success !</string>
+    <string name="bookSuccessBtn_discription">Click here to go prvious page</string>
+    <string name="paySuccess_BckBtn_discription">Click here to Enter cash payment page</string>
+    <string name="booking_success_message">Your booking is successful!\n We are waiting for your presence in.\n Thankyou!!</string>
+    <string name="bookinOK">OK</string>
+
+
+    <string name="Notification_topic">Notifications</string>
+    <string name="notification_BckBtn_discription">Click here to go prvious page</string>
+    <string name="date_notic_1">20 feb 2023</string>
+    <string name="notice1">New location (Mirissa) added to tours.\nReserve your ticket now!</string>
+    <string name="date_notic_2">10 feb 2023</string>
+    <string name="notice2">New Hotel (Galle Resort) added to tours.\nReserve your ticket now!</string>
+    <string name="date_notic_3">02 feb 2023</string>
+    <string name="notice3">New Cultural Market (Dambulla) added to tours.\nAdd your preference now!</string>
+    <string name="date_notic_4">19 jan 2023</string>
+    <string name="notice4">Explore lanka new travel offers are here.\nReserve your ticket now!</string>
+    <string name="date_notic_5">02 jan 2023</string>
+    <string name="notice5">Wow! New place to visit in the island.\nBook you ticket soon.</string>
+
+
+    <string name="MarketPlace_topic">Market Place</string>
+    <string name="marketPlc_BckBtn_discription">Click here to go prvious page</string>
+    <string name="MarketPlace_Description">"Investing in Sri Lanka's local market can be a profitable and rewarding experience.
+        The country has a growing economy and a favorable business climate that attracts foreign investment.
+        Here are some local Markets you might consider investing in Sri Lanka's. "</string>
+
+    <string name="TextileMarket_topic">Textile Market</string>
+    <string name="textile_BckBtn_discription">Click here to go prvious page</string>
+    <string name="textileDescription">Investing in the Sri Lankan cultural textile market can offer investors a profitable opportunity to tap into the country\'s growing economy.
+        With a well-established industry, skilled workforce, and supportive government policies, the market has the potential to yield a 30% profit margin.
+        However, investors should also consider the challenges in the industry, including competition from other textile-producing countries, fluctuating global markets, and the need to maintain product quality and compliance with international standards.
+        Partnering with local experts can help navigate these challenges, and leveraging Sri Lanka\'s cultural textile heritage can provide a unique selling point to stand out in the market and maximize returns.</string>
+    <string name="textilePage_cancelBtn">Cancel</string>
+    <string name="textilePage_ProceedBtn">Proceed</string>
+
+    <string name="spicesMaeketTopic">Spices Market</string>
+    <string name="spicesDescription">Investing in the Sri Lankan cultural spices market can provide investors with a potentially profitable opportunity. With a long-standing history of spice cultivation, Sri Lanka is known for its high-quality, organic spices that are in demand globally.
+        The market has the potential to yield a 35% profit margin, with opportunities for growth in both domestic and export markets.
+        However, investors should also consider the challenges in the industry, such as fluctuating global demand, price volatility, and competition from other spice-producing countries.
+        Partnering with local experts and suppliers can help navigate these challenges and ensure compliance with international quality standards. Overall, the Sri Lankan cultural spices market presents an exciting opportunity for investors to tap into a vibrant industry with a rich cultural heritage.</string>
+    <string name="spicesPage_cancelBtn">Cancel</string>
+    <string name="spicesPage_ProceedBtn">Proceed</string>
+
+    <string name="seadFoodMaeketTopic">SeaFood Market</string>
+    <string name="seaFoodDescription">
+        Investing in the Sri Lankan seafood market can offer investors the potential for high returns.
+        Sri Lanka"s long coastline, extensive network of rivers and lagoons, and diverse marine ecosystem make it an ideal location for seafood production.
+        The country is known for its high-quality seafood products, including prawns, crabs, lobsters, and fish.By investing in the Sri Lankan seafood market, investors can take advantage of the growing global demand for sustainable and ethically sourced seafood.
+        According to market research, the global seafood market is expected to grow at a CAGR of 3.8% from 2021 to 2028.
+        This growth is driven by factors such as increasing consumer awareness about health and wellness, the rising popularity of seafood in fine dining, and the growing demand for sustainable and traceable seafood products.</string>
+    <string name="seaFoodPage_cancelBtn">Cancel</string>
+    <string name="seaFoodPage_ProceedBtn">Proceed</string>
+
+    <string name="medicineMaeketTopic">Medicine Market</string>
+    <string name="medicineDescription">Investing in the Sri Lankan cultural medicine market can provide investors with the potential for high returns. Sri Lanka has a rich history and culture in traditional medicine, with a wide range of herbs and natural remedies used to treat various ailments.
+        By investing in the Sri Lankan cultural medicine market, investors can capitalize on the growing global interest in natural and alternative medicines.
+        According to market research, the global herbal medicine market is expected to grow at a CAGR of 7.2% from 2021 to 2028.
+        This growth is driven by factors such as increasing consumer awareness about the benefits of natural remedies, the rising demand for herbal supplements and medicines, and the growing popularity of traditional medicine practices around the world.</string>
+    <string name="medicinePage_cancelBtn">Cancel</string>
+    <string name="medicinePage_ProceedBtn">Proceed</string>
+
+    <string name="investPageTopic">Investment Details</string>
+    <string name="invest_BckBtn_discription">Click here to go prvious page</string>
+    <string name="investPageCondtion">I agree for the terms and condtion for the above mentioned invesment process.</string>
+    <string name="cashPayBackBtnContent">Click here to go back to payment method page</string>
+    <string-array name="invest_cashType">
+        <item>Dollar($)</item>
+        <item>Rupees(Rs)</item>
+    </string-array>
+    <string name="investPay_btn">Pay</string>
+    <string name="menue_description">Click to see menu</string>
+    <string name="medicineBtn">enter medicine market page</string>
+    <string name="textileBtn">enter textile market page</string>
+    <string name="seaBtn">enter sea market page</string>
+    <string name="spicesBtn">Enter spices page</string>
+    <string name="AddPayinfo">Add</string>
+
+
 </resources>

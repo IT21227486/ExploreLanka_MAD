@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgrundColor"
+    tools:context=".MedicineMarketActivity">
+
+    <TextView
+        android:id="@+id/tv_medicineMarketTopic"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#BD9F9F"
+        android:paddingTop="10dp"
+        android:text="@string/medicineMaeketTopic"
+        android:textAlignment="center"
+        android:textColor="@color/TopicColor_ofEachPage"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/cardPay_imgbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/menu_btnMedicine"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/topic_backgound"
+        android:contentDescription="@string/menue_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_icon" />
+
+    <ImageButton
+        android:id="@+id/medicine_backBtn"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#BC9E9E"
+        android:contentDescription="@string/paymentMethod_backBtnDescription"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
+    <Button
+        android:id="@+id/medicinePage_proceedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="@color/ButTon_60_30"
+        android:text="@string/medicinePage_ProceedBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/medicineDescripion_tv"
+        android:layout_width="383dp"
+        android:layout_height="304dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="14dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/medicineDescription"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicineImg4" />
+
+    <ImageView
+        android:id="@+id/medicineImg2"
+        android:layout_width="197dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/medicineImg1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_medicineMarketTopic"
+        app:srcCompat="@drawable/medicinemarketimg2" />
+
+    <ImageView
+        android:id="@+id/medicineImg4"
+        android:layout_width="197dp"
+        android:layout_height="112dp"
+        android:layout_marginEnd="15dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/medicineImg3"
+        app:layout_constraintTop_toBottomOf="@+id/medicineImg2"
+        app:srcCompat="@drawable/medicinemarketimg4" />
+
+    <ImageView
+        android:id="@+id/medicineImg1"
+        android:layout_width="197dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="14dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/medicineImg2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicine_backBtn"
+        app:srcCompat="@drawable/medicinemarketimg1" />
+
+    <ImageView
+        android:id="@+id/medicineImg3"
+        android:layout_width="197dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="15dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/medicineImg4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicineImg1"
+        app:srcCompat="@drawable/medicinemarketimg3" />
+
+    <Button
+        android:id="@+id/medicinePage_cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="@color/ButTon_60_30"
+        android:text="@string/medicinePage_cancelBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CrudPay">
+
+    <EditText
+        android:id="@+id/customerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Customer Name"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/CustomerNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Customer Number"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/payType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Payment Type"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/bookType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Booking Type"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Amount"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Delete" />
+
+</LinearLayout>

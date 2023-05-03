@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5E7685"
+    tools:context=".BookingCompletedActivity">
+
+    <TextView
+        android:id="@+id/tv_BookingSuccesTopic"
+        android:layout_width="411dp"
+        android:layout_height="48dp"
+        android:background="@color/topic_backgound"
+        android:paddingTop="10dp"
+        android:text="@string/bookSuccess_topic"
+        android:textAlignment="center"
+        android:textColor="@color/TopicColor_ofEachPage"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/menu_btnComplete"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/topic_backgound"
+        android:contentDescription="@string/menue_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_icon" />
+
+    <ImageButton
+        android:id="@+id/bookingSuccessBack_btn2"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#BC9E9E"
+        android:contentDescription="@string/cashPayBackBtnContent"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/bookinSuccess_logo_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
+    <ImageView
+        android:id="@+id/bookinSuccess_logo_img"
+        android:layout_width="346dp"
+        android:layout_height="259dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_BookingSuccesTopic"
+        app:srcCompat="@drawable/explorelanka_succesfull_logo" />
+
+    <TextView
+        android:id="@+id/booking_success_TV"
+        android:layout_width="385dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/booking_success_message"
+        android:textAlignment="center"
+        android:textColor="#F4E774"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/success_emoji_img4"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookinSuccess_logo_img" />
+
+    <Button
+        android:id="@+id/bookingSuccess_ok_btn"
+        android:layout_width="305dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/bookinOK"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/success_emoji_img1"
+        android:layout_width="83dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="136dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/booking_success_emoji" />
+
+    <ImageView
+        android:id="@+id/success_emoji_img2"
+        android:layout_width="82dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="136dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/success_emoji_img1"
+        app:layout_constraintTop_toBottomOf="@+id/booking_success_TV"
+        app:layout_constraintVertical_bias="0.846"
+        app:srcCompat="@drawable/booking_success_emoji2" />
+
+    <ImageView
+        android:id="@+id/success_emoji_img3"
+        android:layout_width="80dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="136dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/success_emoji_img2"
+        app:layout_constraintTop_toBottomOf="@+id/booking_success_TV"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/booking_success_emoji3" />
+
+    <ImageView
+        android:id="@+id/success_emoji_img4"
+        android:layout_width="79dp"
+        android:layout_height="81dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="136dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/booking_success_TV"
+        app:srcCompat="@drawable/booking_success_emoji4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

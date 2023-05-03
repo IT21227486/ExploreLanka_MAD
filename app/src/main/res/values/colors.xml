@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="teal_700">#00796b</color>
+
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="backgrundColor">#CDC5C5</color>
+    <color name="textColor">#3A2B2B</color>
+    <color name="TopicColor">#F205166C</color>
+    <color name="btnColor">#F205166C</color>
+    <color name="TopicColor_ofEachPage">#02033D</color>
+    <color name="page_background">#CDC5C5</color>
+    <color name="topic_backgound">#BD9F9F</color>
+    <color name="btn_color_of_payment_pages" >#08255E</color>
+    <color name="new_color">#C5CDDC</color>
+    <color name="ButTon_60_30">#5F5B5B</color>
+    <color name="Market_text_body">#EDEDED</color>
+
+
 </resources>

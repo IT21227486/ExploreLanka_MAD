@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    tools:context=".TextileMarketActivity">
+
+    <Button
+        android:id="@+id/textilePage_cancelBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/ButTon_60_30"
+        android:text="@string/textilePage_cancelBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_textileMarketTopic"
+        android:layout_width="411dp"
+        android:layout_height="48dp"
+        android:background="@color/topic_backgound"
+        android:paddingTop="10dp"
+        android:text="@string/TextileMarket_topic"
+        android:textAlignment="center"
+        android:textColor="@color/TopicColor_ofEachPage"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/cardPay_imgbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/menu_btnTextile"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/topic_backgound"
+        android:contentDescription="@string/menue_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_icon" />
+
+    <ImageButton
+        android:id="@+id/textile_backBtn"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#BC9E9E"
+        android:contentDescription="@string/paymentMethod_backBtnDescription"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/textileImg1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
+    <TextView
+        android:id="@+id/textileDescripion_tv"
+        android:layout_width="383dp"
+        android:layout_height="304dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/textileDescription"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textileImg4" />
+
+    <ImageView
+        android:id="@+id/textileImg1"
+        android:layout_width="197dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="15dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/textileImg3"
+        app:layout_constraintEnd_toStartOf="@+id/textileImg2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/textilepic1" />
+
+    <ImageView
+        android:id="@+id/textileImg2"
+        android:layout_width="196dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="15dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textileImg1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_textileMarketTopic"
+        app:srcCompat="@drawable/textilepic2" />
+
+    <ImageView
+        android:id="@+id/textileImg3"
+        android:layout_width="202dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="31dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/textileDescripion_tv"
+        app:layout_constraintEnd_toStartOf="@+id/textileImg4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/textilepic3" />
+
+    <Button
+        android:id="@+id/textilePage_proceedBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/ButTon_60_30"
+        android:text="@string/textilePage_ProceedBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textilePage_cancelBtn" />
+
+    <ImageView
+        android:id="@+id/textileImg4"
+        android:layout_width="187dp"
+        android:layout_height="118dp"
+        android:layout_marginEnd="15dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textileImg3"
+        app:layout_constraintTop_toBottomOf="@+id/textileImg2"
+        app:srcCompat="@drawable/textilepic4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

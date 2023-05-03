@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    tools:context=".SpicesMarketActivity">
+
+    <Button
+        android:id="@+id/spicesPage_cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="@color/ButTon_60_30"
+        android:text="@string/spicesPage_cancelBtn"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_spicesMarketTopic"
+        android:layout_width="411dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#BD9F9F"
+        android:paddingTop="10dp"
+        android:text="@string/spicesMaeketTopic"
+        android:textAlignment="center"
+        android:textColor="@color/TopicColor_ofEachPage"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/cardPay_imgbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/menu_btnSpices"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/topic_backgound"
+        android:contentDescription="@string/menue_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_icon" />
+
+    <ImageButton
+        android:id="@+id/spices_backBtn"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#BC9E9E"
+        android:contentDescription="@string/paymentMethod_backBtnDescription"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/spicesImg1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
+    <Button
+        android:id="@+id/spicesPage_proceedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="@color/ButTon_60_30"
+        android:text="@string/spicesPage_ProceedBtn"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/spicesDescripion_tv"
+        android:layout_width="383dp"
+        android:layout_height="304dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/spicesDescription"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spicesImg3" />
+
+    <ImageView
+        android:id="@+id/spicesImg1"
+        android:layout_width="197dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/spicesImg2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spices_backBtn"
+        app:srcCompat="@drawable/spicesimg1" />
+
+    <ImageView
+        android:id="@+id/spicesImg2"
+        android:layout_width="197dp"
+        android:layout_height="112dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/spicesImg3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spicesImg1"
+        app:srcCompat="@drawable/spicesimg2" />
+
+    <ImageView
+        android:id="@+id/spicesImg3"
+        android:layout_width="197dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/spicesImg4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spicesImg1"
+        app:srcCompat="@drawable/spicesimg3" />
+
+    <ImageView
+        android:id="@+id/spicesImg4"
+        android:layout_width="197dp"
+        android:layout_height="112dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spicesImg3"
+        app:layout_constraintTop_toBottomOf="@+id/spicesImg2"
+        app:srcCompat="@drawable/spicesimg4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
