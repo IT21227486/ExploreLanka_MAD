@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="410dp"
+    android:layout_height="match_parent"
+    android:background="#CDC5C5"
+    android:backgroundTint="#CDC5C5"
+    tools:context=".worldEnd">
+
+    <TextView
+        android:id="@+id/title_wend"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:background="#BD9F9F"
+        android:paddingTop="5dp"
+        android:text="World End Nuwara Eliya"
+        android:textAlignment="center"
+        android:textColor="@color/textColour"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dis_wend"
+        android:layout_width="390dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:text="One of the most jaw-dropping experience you can ever have in Sri Lanka is the World’s End on the Horton Plains.Tourists can see animals such as leopards and deer."
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic_wend" />
+
+    <ImageView
+        android:id="@+id/pic_wend"
+        android:layout_width="256dp"
+        android:layout_height="154dp"
+        app:layout_constraintEnd_toStartOf="@+id/location_wend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_wend"
+        app:srcCompat="@drawable/worldend" />
+
+    <TextView
+        android:id="@+id/location_wend"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="14dp"
+        android:text="Location: The nearest station is in Nanu Oya."
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/pic_wend"
+        app:layout_constraintTop_toBottomOf="@+id/title_wend" />
+
+    <TextView
+        android:id="@+id/visit_wend"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="13dp"
+        android:text="Best Time to Visit: The best time to reach there is before 10:00 AM before."
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/pic_wend"
+        app:layout_constraintTop_toBottomOf="@+id/location_wend" />
+
+    <TextView
+        android:id="@+id/title_booking_wend"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:text="Booking Details"
+        android:textColor="@color/titlecolor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hotel_wend" />
+
+    <TextView
+        android:id="@+id/children_wend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="6dp"
+        android:text="Number of Children Tickets : "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_booking_wend" />
+
+    <TextView
+        android:id="@+id/adult_wend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        android:text="Number of Adults Tickets : "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/children_wend" />
+
+    <TextView
+        android:id="@+id/edt_children_no_wend"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="36dp"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/children_wend"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hotel_wend" />
+
+    <TextView
+        android:id="@+id/edt_adults_no_wend"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/adult_wend"
+        app:layout_constraintTop_toBottomOf="@+id/edt_children_no_wend" />
+
+    <TextView
+        android:id="@+id/type_wend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:text="Tuorist Type : "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adult_wend" />
+
+    <RadioButton
+        android:id="@+id/local_wend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:text="Local"
+        app:layout_constraintStart_toEndOf="@+id/type_wend"
+        app:layout_constraintTop_toBottomOf="@+id/adult_wend" />
+
+    <RadioButton
+        android:id="@+id/foreign_wend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="-9dp"
+        android:text="Foreign"
+        app:layout_constraintStart_toEndOf="@+id/local_wend"
+        app:layout_constraintTop_toBottomOf="@+id/edt_adults_no_wend" />
+
+    <Button
+        android:id="@+id/btn_ticket_wend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="booking tickets"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foreign_wend" />
+
+    <Button
+        android:id="@+id/btn_hotel_wend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="see nearest hotels"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dis_wend" />
+
+    <Button
+        android:id="@+id/btnUpdate_wend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="-4dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Update Booking Details"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ticket_wend" />
+
+    <Button
+        android:id="@+id/btnDelete_wend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="-3dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Delete Booking Details"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdate_wend" />
+
+    <ImageButton
+        android:id="@+id/arrow_wend"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-47dp"
+        android:layout_marginEnd="-57dp"
+        android:backgroundTint="@color/topicBackground"
+        android:contentDescription="@string/adult_pinnewela"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/pic_wend"
+        app:layout_constraintTop_toBottomOf="@+id/title_wend"
+        app:srcCompat="@drawable/wwarrow" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="-60dp"
+        android:background="@color/topicBackground"
+        android:contentDescription="@string/menu_wend"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/title_wend"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mmenu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

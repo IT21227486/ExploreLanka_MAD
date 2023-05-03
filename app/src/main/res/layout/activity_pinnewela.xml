@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnDelete_yala"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myBackground"
+    android:contentDescription="@string/menu_pinnewela"
+    android:textAlignment="viewStart"
+    tools:context=".Pinnewela">
+
+    <TextView
+        android:id="@+id/title_pinnewela"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:background="@color/topicBackground"
+        android:paddingTop="5dp"
+        android:text="Pinnewala Elephant Orphanage"
+        android:textAlignment="center"
+        android:textColor="@color/textColour"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pic_pinnewela"
+        android:layout_width="256dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="-9dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_pinnewela"
+        app:srcCompat="@drawable/pinnewela" />
+
+    <TextView
+        android:id="@+id/dis_pinnewela"
+        android:layout_width="390dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="3dp"
+        android:text="Pinnawala has the largest herd of captive elephants in the world. There were 71 elephants, including 30 males and 41 females from 3 generations, living in Pinnawala."
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic_pinnewela" />
+
+    <TextView
+        android:id="@+id/location_pinnewela"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="27dp"
+        android:text="Location : Located at the Wilpattu National Park."
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/pic_pinnewela"
+        app:layout_constraintTop_toBottomOf="@+id/title_pinnewela" />
+
+    <TextView
+        android:id="@+id/time_pinnewela"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="10dp"
+        android:text="Timings: Opens daily from  8:30 am to 5:30 pm."
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/pic_pinnewela"
+        app:layout_constraintTop_toBottomOf="@+id/location_pinnewela" />
+
+    <TextView
+        android:id="@+id/title_booking_pinnewela"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:text="Booking Details"
+        android:textColor="@color/titlecolor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hotel_pinnewela" />
+
+    <TextView
+        android:id="@+id/children_pinnewela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Number of Children Tickets : "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_booking_pinnewela" />
+
+    <TextView
+        android:id="@+id/adult_pinnewela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Number of Adults Tickets : "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/children_pinnewela" />
+
+    <TextView
+        android:id="@+id/edt_children_no_pinnewela"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="38dp"
+        android:text="0"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/children_pinnewela"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hotel_pinnewela" />
+
+    <TextView
+        android:id="@+id/edt_adults_no_pinnewela"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="25dp"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/adult_pinnewela"
+        app:layout_constraintTop_toBottomOf="@+id/edt_children_no_pinnewela" />
+
+    <TextView
+        android:id="@+id/type_pinnewela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Tourist Type : "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adult_pinnewela" />
+
+    <RadioButton
+        android:id="@+id/local_pinnewela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="5dp"
+        android:text="Local"
+        app:layout_constraintStart_toEndOf="@+id/type_pinnewela"
+        app:layout_constraintTop_toBottomOf="@+id/adult_pinnewela" />
+
+    <RadioButton
+        android:id="@+id/foreign_pinnewela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-6dp"
+        android:text="Foreign"
+        app:layout_constraintStart_toEndOf="@+id/local_pinnewela"
+        app:layout_constraintTop_toBottomOf="@+id/edt_adults_no_pinnewela" />
+
+    <Button
+        android:id="@+id/btn_ticket_pinnewela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Booking tickets"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/local_pinnewela" />
+
+    <Button
+        android:id="@+id/btn_hotel_pinnewela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="see nearest hotel"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dis_pinnewela" />
+
+    <Button
+        android:id="@+id/btnUpdate_pinnewela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="-5dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Update Booking Details"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ticket_pinnewela" />
+
+    <Button
+        android:id="@+id/btnDelete_pinnewela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="-5dp"
+        android:backgroundTint="@color/black"
+        android:text="Delete Booking Details"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdate_pinnewela" />
+
+    <ImageButton
+        android:id="@+id/arrow_pinnewela"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:background="@color/topicBackground"
+        android:contentDescription="@string/arrow_pinnewela"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wwarrow" />
+
+    <ImageButton
+        android:id="@+id/menu_pinnewela"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="-60dp"
+        android:background="@color/topicBackground"
+        android:contentDescription="@string/menu_pinnewela"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/title_pinnewela"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mmenu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

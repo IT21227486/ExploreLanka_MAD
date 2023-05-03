@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myBackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="410dp"
+        android:layout_height="80dp"
+        android:background="@color/topicBackground"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:text="Visit Your Choice"
+        android:textAlignment="center"
+        android:textColor="@color/textColour"
+        android:textColorHighlight="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sigiriya"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/buttonColor"
+        android:shadowColor="#9C27B0"
+        android:text="Sigiriya"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/place" />
+
+    <Button
+        android:id="@+id/ravana"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Ravana Cave"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sigiriya" />
+
+    <Button
+        android:id="@+id/yala"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Yala National Park"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ravana" />
+
+    <Button
+        android:id="@+id/sinharaja"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Sinharaja Forest Reserve"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yala" />
+
+    <Button
+        android:id="@+id/pinnewala"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Pinnewala Elephant Orphanage"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sinharaja" />
+
+    <Button
+        android:id="@+id/worldEnd"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="World End Nuwara Eliya"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinnewala" />
+
+    <ImageButton
+        android:id="@+id/arrow_main"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="-410dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/topicBackground"
+        android:contentDescription="@string/arrow_main"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/place"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wwarrow" />
+
+    <ImageButton
+        android:id="@+id/menu_main"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="-70dp"
+        android:layout_marginTop="-70dp"
+        android:background="@color/topicBackground"
+        android:contentDescription="@string/menu_main"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/place"
+        app:layout_constraintTop_toBottomOf="@+id/place"
+        app:srcCompat="@drawable/mmenu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

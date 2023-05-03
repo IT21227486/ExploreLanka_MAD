@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myBackground"
+    tools:context=".RavanaCave">
+
+    <TextView
+        android:id="@+id/type_ravana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:text="Tourist Type : "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adult_ravana" />
+
+    <TextView
+        android:id="@+id/adult_ravana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Number of Adults Tickets : "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/children_ravana" />
+
+    <TextView
+        android:id="@+id/children_ravana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:text="Number of Children Tickets : "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_booking_ravana" />
+
+    <TextView
+        android:id="@+id/title_booking_ravana"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Booking Details"
+        android:textColor="@color/titlecolor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hotel_ravana" />
+
+    <TextView
+        android:id="@+id/visit_ravana"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:text="Best time to visit: This area will be early in the morning or late in the afternoon."
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dis_ravana" />
+
+    <TextView
+        android:id="@+id/time_ravana"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="9dp"
+        android:text="Timings: Opens daily."
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/pic_ravana"
+        app:layout_constraintTop_toBottomOf="@+id/location_ravana" />
+
+    <TextView
+        android:id="@+id/title_ravana"
+        android:layout_width="410dp"
+        android:layout_height="47dp"
+        android:background="@color/topicBackground"
+        android:text="Ravana's Cave"
+        android:textAlignment="center"
+        android:textColor="@color/textColour"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pic_ravana"
+        android:layout_width="256dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_ravana"
+        app:srcCompat="@drawable/ravana" />
+
+    <TextView
+        android:id="@+id/dis_ravana"
+        android:layout_width="390dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:text="Historians suggest that King Ravana used the cave as a hiding place for Princess Sita. The tunnels in the cave are the representation of Ravana's architectural genius"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic_ravana" />
+
+    <TextView
+        android:id="@+id/location_ravana"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="24dp"
+        android:text="Location : 2 km from Ella town."
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/pic_ravana"
+        app:layout_constraintTop_toBottomOf="@+id/title_ravana" />
+
+    <TextView
+        android:id="@+id/edt_children_no_ravana"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="35dp"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/children_ravana"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hotel_ravana" />
+
+    <TextView
+        android:id="@+id/edt_adults_no_ravana"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="12dp"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/foreign_ravana"
+        app:layout_constraintStart_toEndOf="@+id/adult_ravana"
+        app:layout_constraintTop_toBottomOf="@+id/edt_children_no_ravana" />
+
+    <RadioButton
+        android:id="@+id/local_ravana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:text="Local"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/type_ravana"
+        app:layout_constraintTop_toBottomOf="@+id/adult_ravana" />
+
+    <RadioButton
+        android:id="@+id/foreign_ravana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="-17dp"
+        android:text="Foreign"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/local_ravana"
+        app:layout_constraintTop_toBottomOf="@+id/edt_adults_no_ravana" />
+
+    <Button
+        android:id="@+id/btn_ticket_ravana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="-10dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Book Tickets"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/local_ravana" />
+
+    <Button
+        android:id="@+id/btn_hotel_ravana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="See nearest hotels"
+        android:textColorHighlight="@color/buttonColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visit_ravana" />
+
+    <Button
+        android:id="@+id/btnUpdate_ravana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="-7dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Update Booking Details"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ticket_ravana" />
+
+    <Button
+        android:id="@+id/btnDelete_ravana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="-5dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Delete Booking Details"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdate_ravana" />
+
+    <ImageButton
+        android:id="@+id/arrow_ravana"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-3dp"
+        android:background="@color/topicBackground"
+        android:contentDescription="@string/arrow_ravana"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wwarrow" />
+
+    <ImageButton
+        android:id="@+id/menu_ravana"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="-410dp"
+        android:background="@color/topicBackground"
+        android:contentDescription="@string/menu_ravana"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/title_ravana"
+        app:layout_constraintTop_toBottomOf="@+id/title_ravana"
+        app:srcCompat="@drawable/mmenu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

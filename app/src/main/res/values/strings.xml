@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">ExploreLanka</string>
+
+    <string name="place">Visit Your Choice</string>
+    <string name="sigiriya">Sigiriya</string>
+    <string name="ravana">Ravana Cave</string>
+    <string name="yala">Yala National Park</string>
+    <string name="attidiya">Attidiya bird sanctuary</string>
+    <string name="sinharaja">Sinharaja Forest Reserve</string>
+    <string name="pinnewala">Pinnewala Elephant Orphanage</string>
+    <string name="worldEnd">World End Nuwara Eliya</string>
+    <string name="zoo">Dehivala zoo</string>
+    <string name="peradiniya">Peradeniya botenical garden</string>
+    <string name="arrow_main">arrow</string>
+    <string name="menu_main">menu</string>
+
+
+    <string name="title_sigiriya">Sigiriya</string>
+    <string name="pic_sigiriya">sigiriya</string>
+    <string name="dis_sigiriya">Sigiriya was built king kashyapa by the fifth century. Also called “Lion Rock”. It is one of the most valuable and historical place in Sri Lanka.</string>
+    <string name="location_sigiriya">Location : 16.8km from SriLanka via Inamaluwa</string>
+    <string name="time_sigiriya">Timings: Opens daily from 7 AM to 5:30 PM.</string>
+    <string name="visit_sigiriya">Best time to visit: This area will be early in the morning or late in the afternoon.</string>
+    <string name="title_booking_sigiriya">Booking Details</string>
+    <string name="children_sigiriya">Number of Children Tickets : </string>
+    <string name="adult_sigiriya">Number of Adults Tickets : </string>
+    <string name="edt_children_no_sigiriya"></string>
+    <string name="edt_adults_no_sigiriya"></string>
+    <string name="type_sigiriya">Tourist Type : </string>
+    <string name="LF_sigiriya"></string>
+    <string name="btn_ticket_sigiriya">Book Tickets</string>
+    <string name="btn_hotel_sigiriya">See Nearest Hotels.</string>
+    <string name="btnUpdate_sigiriya"> Update Booking Details </string>
+    <string name="btnDelete_sigiriya"> Delete Booking Details </string>
+    <string name="arrow_sigiriya">arrow</string>
+    <string name="menu_sigiriya">menu</string>
+
+
+    <string name="title_ravana">Ravana Cave</string>
+    <string name="pic_ravana">ravana</string>
+    <string name="dis_ravana">Historians suggest that King Ravana used the cave as a hiding place for Princess Sita. The tunnels in the cave are the representation of Ravana architectural genius</string>
+    <string name="location_ravana">Location : 2 km from Ella town.</string>
+    <string name="time_ravana">Timings: Opens daily.</string>
+    <string name="visit_ravana">Best time to visit: This area will be early in the morning or late in the afternoon.</string>
+    <string name="title_booking_ravana">Booking Details</string>
+    <string name="children_ravana">Number of Children Tickets : </string>
+    <string name="edt_children_no_ravana">0</string>
+    <string name="adult_ravana">Number of Adults Tickets : </string>
+    <string name="edt_adults_no_ravana">0</string>
+    <string name="type_ravana">Tourist Type : </string>
+    <string name="local_ravana">Local</string>
+    <string name="foreign_ravana">Foreign</string>
+    <string name="btn_ticket_ravana">Book Tickets</string>
+    <string name="btn_hotel_ravana">See nearest hotels</string>
+    <string name="btnUpdate_ravana"> Update Booking Details </string>
+    <string name="btnDelete_ravana"> Delete Booking Details </string>
+    <string name="arrow_ravana">arrow</string>
+    <string name="menu_ravana">menu</string>
+
+
+    <string name="title_yala">Yala National Park</string>
+    <string name="pic_yala">yala</string>
+    <string name="dis_yala">Yala was designated as a wildlife sanctuary in 1900. The park is best known for its variety of wild animals. Also known as Ruhunu National Park</string>
+    <string name="location_yala">Location : Southern Province and Uva Province.</string>
+    <string name="time_yala">Timming : Open daily 6am to 6pm.</string>
+    <string name="title_booking_yala">Booking Details</string>
+    <string name="children_yala">Number of Children Tickets : </string>
+    <string name="edt_children_no_yala">0</string>
+    <string name="adult_yala">Number of Adults Tickets : </string>
+    <string name="edt_adults_no_yala">0</string>
+    <string name="type_yala">Tourist Type  : </string>
+    <string name="local_yala">Local</string>
+    <string name="foreign_yala">Foreign</string>
+    <string name="btn_ticket_yala">book tickets</string>
+    <string name="btn_hotel_yala">see nearest hotel</string>
+    <string name="btnUpdate_yala"> Update Booking Details </string>
+    <string name="btnDelete_yala"> Delete Booking Details </string>
+    <string name="arrow_yala">arrow</string>
+    <string name="menu_yala">menu</string>
+
+
+    <string name="title_sinharaja">Sinharaja Forest Reserve</string>
+    <string name="pic_sinharaja">sinharaja</string>
+    <string name="dis_sinharaja">Declared as a World Heritage Site by UNESCO.it is a paradise for nature and wildlife lovers. The forest is covered by plenty of rain clouds.</string>
+    <string name="location_sinharaja">Location: Sinharaja Forest Reserve, Southern Province</string>
+    <string name="time_sinharaja">Timings: Opens daily from 6:30 AM to 6 PM .</string>
+    <string name="title_booking_sinharaja">Booking Details</string>
+    <string name="children_sinharaja">Number of Children Tickets : </string>
+    <string name="edt_children_no_sinharaja">0</string>
+    <string name="adult_sinharaja">Number of Adults Ticket : </string>
+    <string name="edt_adults_no_sinharaja">0</string>
+    <string name="type_sinharaja">Type Tourist : </string>
+    <string name="local_sinharaja">Local</string>
+    <string name="foreign_sinharaja">Foreign</string>
+    <string name="btn_ticket_sinharaja">Booking tickets</string>
+    <string name="btn_hotel_sinharaja">see nearest hotels</string>
+    <string name="btnUpdate_sinharaja"> Update Booking Details </string>
+    <string name="btnDelete_sinharaja"> Delete Booking Details </string>
+    <string name="arrow_sinharaja">arrow</string>
+    <string name="menu_sinharaja">menu</string>
+
+
+    <string name="title_pinnewela">Pinnewala Elephant Orphanage</string>
+    <string name="pic_pinnewela">pinnewela</string>
+    <string name="dis_pinnewela">Pinnawala has the largest herd of captive elephants in the world. There were 71 elephants, including 30 males and 41 females from 3 generations, living in Pinnawala.</string>
+    <string name="location_pinnewela">Location : Located at the Wilpattu National Park.</string>
+    <string name="time_pinnewela">Timings: Opens daily from  8:30 am to 5:30 pm.</string>
+    <string name="title_booking_pinnewela">Booking Details</string>
+    <string name="children_pinnewela">Number of Children Tickets : </string>
+    <string name="edt_children_no_pinnewela">0</string>
+    <string name="adult_pinnewela">Number of Adults Tickets : </string>
+    <string name="edt_adults_no_pinnewela">0</string>
+    <string name="type_pinnewela">Tourist Type : </string>
+    <string name="local_pinnewela">Local</string>
+    <string name="foreign_pinnewela">Foreign</string>
+    <string name="btn_ticket_pinnewela">Booking tickets</string>
+    <string name="btn_hotel_pinnewela">see nearest hotel</string>
+    <string name="btnUpdate_pinnewela"> Update Booking Details </string>
+    <string name="btnDelete_pinnewela"> Delete Booking Details </string>
+    <string name="arrow_pinnewela">arrow</string>
+    <string name="menu_pinnewela">menu</string>
+
+
+    <string name="title_wend">World End Nuwara Eliya</string>
+    <string name="pic_wend">worldend</string>
+    <string name="dis_wend">One of the most jaw-dropping experience you can ever have in Sri Lanka is the World’s End on the Horton Plains.Tourists can see animals such as leopards and deer.</string>
+    <string name="location_wend">Location: The nearest station is in Nanu Oya.</string>
+    <string name="visit_wend">Best Time to Visit: The best time to reach there is before 10:00 AM before.</string>
+    <string name="title_booking_wend">Booking Details</string>
+    <string name="children_wend">Number of Children Tickets : </string>
+    <string name="edt_children_no_wend">0</string>
+    <string name="adult_wend">Number of Adults Tickets : </string>
+    <string name="edt_adults_no_wend">0</string>
+    <string name="type_wend">Tuorist Type : </string>
+    <string name="local_wend">Local</string>
+    <string name="foreign_wend">Foreign</string>
+    <string name="btn_ticket_wend">booking tickets</string>
+    <string name="btn_hotel_wend">see nearest hotels</string>
+    <string name="btnUpdate_wend"> Update Booking Details </string>
+    <string name="btnDelete_wend"> Delete Booking Details </string>
+    <string name="arrow_wend">arrow</string>
+    <string name="menu_wend">menu</string>
+
+</resources>

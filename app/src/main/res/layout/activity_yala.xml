@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDC5C5"
+    tools:context=".Yala">
+
+    <TextView
+        android:id="@+id/title_yala"
+        android:layout_width="410dp"
+        android:layout_height="53dp"
+        android:background="#BD9F9F"
+        android:paddingTop="5dp"
+        android:text="Yala National Park"
+        android:textAlignment="center"
+        android:textColor="@color/textColour"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pic_yala"
+        android:layout_width="256dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_yala"
+        app:srcCompat="@drawable/yala" />
+
+    <TextView
+        android:id="@+id/dis_yala"
+        android:layout_width="390dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="10dp"
+        android:text="Yala was designated as a wildlife sanctuary in 1900. The park is best known for its variety of wild animals. Also known as Ruhunu National Park"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic_yala" />
+
+    <TextView
+        android:id="@+id/location_yala"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="15dp"
+        android:text="Location : Southern Province and Uva Province."
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/pic_yala"
+        app:layout_constraintTop_toBottomOf="@+id/title_yala" />
+
+    <TextView
+        android:id="@+id/time_yala"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="12dp"
+        android:text="Timming : Open daily 6am to 6pm."
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/pic_yala"
+        app:layout_constraintTop_toBottomOf="@+id/location_yala" />
+
+    <TextView
+        android:id="@+id/title_booking_yala"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="3dp"
+        android:text="Booking Details"
+        android:textColor="@color/titlecolor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hotel_yala" />
+
+    <TextView
+        android:id="@+id/children_yala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="Number of Children Tickets : "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_booking_yala" />
+
+    <TextView
+        android:id="@+id/adult_yala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="3dp"
+        android:text="Number of Adults Tickets : "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/children_yala" />
+
+    <TextView
+        android:id="@+id/type_yala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="13dp"
+        android:text="Tourist Type  : "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adult_yala" />
+
+    <TextView
+        android:id="@+id/edt_children_no_yala"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="30dp"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/children_yala"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hotel_yala" />
+
+    <TextView
+        android:id="@+id/edt_adults_no_yala"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/adult_yala"
+        app:layout_constraintTop_toBottomOf="@+id/edt_children_no_yala" />
+
+    <RadioButton
+        android:id="@+id/local_yala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="Local"
+        app:layout_constraintStart_toEndOf="@+id/type_yala"
+        app:layout_constraintTop_toBottomOf="@+id/adult_yala" />
+
+    <RadioButton
+        android:id="@+id/foreign_yala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-8dp"
+        android:text="Foreign"
+        app:layout_constraintStart_toEndOf="@+id/local_yala"
+        app:layout_constraintTop_toBottomOf="@+id/edt_adults_no_yala" />
+
+    <Button
+        android:id="@+id/btn_ticket_yala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="book tickets"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foreign_yala" />
+
+    <Button
+        android:id="@+id/btn_hotel_yala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="see nearest hotel"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dis_yala" />
+
+    <Button
+        android:id="@+id/btnUpdate_yala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Update Booking Details"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ticket_yala" />
+
+    <Button
+        android:id="@+id/btnDelete_yala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Delete Booking Details"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdate_yala" />
+
+    <ImageButton
+        android:id="@+id/arrow_yala"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="-57dp"
+        android:backgroundTint="@color/topicBackground"
+        android:contentDescription="@string/yala"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/title_yala"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wwarrow" />
+
+    <ImageButton
+        android:id="@+id/menu_yala"
+        android:layout_width="90dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="-70dp"
+        android:background="@color/topicBackground"
+        android:contentDescription="@string/menu_yala"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/title_yala"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mmenu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
