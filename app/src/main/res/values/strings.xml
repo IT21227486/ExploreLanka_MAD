@@ -112,6 +112,8 @@
     <string name="seaBtn">enter sea market page</string>
     <string name="spicesBtn">Enter spices page</string>
     <string name="AddPayinfo">Add</string>
+    <string name="fetchPayinfo">Fetch Data</string>
+    <string name="Employee_details_fetch_view">empDetailsPayment</string>
 
 
 </resources>

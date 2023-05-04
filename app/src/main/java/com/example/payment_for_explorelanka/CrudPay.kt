@@ -1,28 +1,25 @@
 package com.example.payment_for_explorelanka
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
-import com.example.payment_for_explorelanka.PayModel.PayListModel
-import com.example.payment_for_explorelanka.databaseP.databasePHelper
+import com.example.payment_for_explorelanka.PayModel.PaymentModel
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class CrudPay : AppCompatActivity() {
 
-    lateinit var btn_save : Button
-    lateinit var btn_del : Button
-    lateinit var cusName :EditText
-    lateinit var cusNo :EditText
-    lateinit var payType :EditText
-    lateinit var bookType :EditText
-    lateinit var amount :EditText
+    private lateinit var btn_save : Button
+    private lateinit var cusName :EditText
+    private lateinit var cusNo :EditText
+    private lateinit var payType :EditText
+    private lateinit var bookType :EditText
+    private lateinit var amount :EditText
 
-    var dbhandler : databasePHelper ?= null
-
+    private lateinit var payDbref : DatabaseReference
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,89 +27,72 @@ class CrudPay : AppCompatActivity() {
         setContentView(R.layout.activity_crud_pay)
 
         btn_save = findViewById(R.id.save_button)
-        btn_del = findViewById(R.id.delete_button)
+//        btn_del = findViewById(R.id.delete_button)
+
         cusName = findViewById(R.id.customerName)
         cusNo = findViewById(R.id.CustomerNumber)
         payType = findViewById(R.id.payType)
         bookType = findViewById(R.id.bookType)
         amount = findViewById(R.id.amount)
-        var isEditMode: Boolean = false
-        dbhandler = databasePHelper(this)
 
-        if(intent != null && intent.getStringExtra("Mode")=="E"){
-            //Update data
-            isEditMode = true
-            btn_save.text = "Update Data"
-            btn_del.visibility = View.VISIBLE
-            val pays : PayListModel = dbhandler!!.getPayinfo(intent.getIntExtra("id", 0))
-            cusName.setText(pays.CustomerName)
-            cusNo.setText(pays.CustomerNum)
-            payType.setText(pays.payType)
-            bookType.setText(pays.bookType)
-            amount.setText(pays.amount)
-
-        }else{
-
-            isEditMode = false
-            btn_save.text = "save Data"
-            btn_del.visibility = View.GONE
-
-        }
+        payDbref = FirebaseDatabase.getInstance().getReference("Payments")
 
         btn_save.setOnClickListener {
-
-            var success :Boolean = false
-            var pays : PayListModel = PayListModel()
-
-            if(isEditMode){
-                //update data
-                intent?.getIntExtra("Id", 0)?.let { pays.id = it }
-                pays.CustomerName = cusName.text.toString()
-                pays.CustomerNum = cusNo.text.toString()
-                pays.payType = payType.text.toString()
-                pays.bookType = bookType.text.toString()
-                pays.amount = amount.text.toString()
-
-                success = dbhandler?.updatePayInfo(pays) as Boolean
-
-
-            }else{
-                //insert data
-                pays.CustomerName = cusName.text.toString()
-                pays.CustomerNum = cusNo.text.toString()
-                pays.payType = payType.text.toString()
-                pays.bookType = bookType.text.toString()
-                pays.amount = amount.text.toString()
-
-
-                success = dbhandler?.addPayinfo(pays)as Boolean
-            }
-
-            if(success){
-                var i = Intent(applicationContext, ShowPayInfo::class.java)
-                startActivity(i)
-                finish()
-            }else{
-                Toast.makeText(applicationContext, "Something went wrong", Toast.LENGTH_LONG).show()
-            }
-        }
-
-
-        btn_del.setOnClickListener {
-            val dialog = AlertDialog.Builder(this).setTitle("Info").setMessage("Click Yes if you Want to the pay").setPositiveButton("Yes",{dialog, i ->
-                val success = dbhandler?.deletePayInfo(intent.getIntExtra("Id",0)) as Boolean
-                if(success){
-                    finish()
-                    dialog.dismiss()
-                }
-            })
-                .setNegativeButton("No",{dialog, i->
-                    dialog.dismiss()
-                })
-            dialog.show()
-
+            savePaymentData()
         }
 
 
     }
+
+    private fun savePaymentData(){
+        // getting payment values
+
+        Log.d("savePaymentData", "Button clicked") // Debug statement
+
+        val customerName = cusName.text.toString()
+        val customerNumber = cusNo.text.toString()
+        val paymentType = payType.text.toString()
+        val bookingType = bookType.text.toString()
+        val payAmount = amount.text.toString()
+
+        if(customerName.isEmpty()){
+            cusName.error =  "Please enter customer name"
+        }
+        if(customerNumber.isEmpty()){
+            cusNo.error =  "Please enter customer name"
+        }
+        if(paymentType.isEmpty()){
+            payType.error =  "Please enter customer name"
+        }
+        if(bookingType.isEmpty()){
+            bookType.error =  "Please enter customer name"
+        }
+        if(payAmount.isEmpty()){
+            amount.error =  "Please enter customer name"
+        }
+
+        val cusId = payDbref.push().key!!
+
+        val payment = PaymentModel(cusId, customerName, customerNumber, paymentType, bookingType, payAmount)
+
+        payDbref.child(cusId).setValue(payment)
+            .addOnCompleteListener {
+                Toast.makeText(this, "payment data inserted succesfully", Toast.LENGTH_LONG).show()
+
+//                cusName.text.clear()
+//                cusNo.text.clear()
+//                payType.text.clear()
+//                bookType.text.clear()
+//                amount.text.clear()
+
+                Log.d("savePaymentData", "Payment data inserted successfully") // Debug statement
+
+            }.addOnFailureListener {  err->
+
+                Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_LONG).show()
+                Log.e("savePaymentData", "Error inserting payment data: ${err.message}") // Error log
+
+            }
+    }
+
 }
