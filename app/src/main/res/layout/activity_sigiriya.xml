@@ -5,7 +5,7 @@
     android:layout_width="410dp"
     android:layout_height="match_parent"
     android:background="#CDC5C5"
-    tools:context=".sigiriya">
+    tools:context=".activities.sigiriya">
 
     <TextView
         android:id="@+id/title_sigiriya"
@@ -113,7 +113,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="21dp"
         android:text="Number of Adults Tickets : "
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,7 +124,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:text="Tourist Type : "
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
@@ -134,52 +134,31 @@
         android:id="@+id/btn_ticket_sigiriya"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginStart="17dp"
         android:backgroundTint="@color/buttonColor"
         android:text="Book Tickets"
         android:textSize="17sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_lf_sigiriya" />
-
-    <TextView
-        android:id="@+id/edt_children_no_sigiriya"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="30dp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/children_sigiriya"
-        app:layout_constraintTop_toBottomOf="@+id/btn_hotel_sigiriya" />
-
-    <TextView
-        android:id="@+id/edt_adults_no_sigiriya"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="2dp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/adult_sigiriya"
-        app:layout_constraintTop_toBottomOf="@+id/edt_children_no_sigiriya" />
+        app:layout_constraintTop_toBottomOf="@+id/enterNameSigiriya" />
 
     <Button
         android:id="@+id/btnUpdate_sigiriya"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="3dp"
         android:backgroundTint="@color/buttonColor"
         android:text="Update Booking"
         android:textSize="17sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRead_sigiriya" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_ticket_sigiriya" />
 
     <Button
         android:id="@+id/btnDelete_sigiriya"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="200dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="79dp"
         android:backgroundTint="@color/buttonColor"
         android:text="Delete Booking"
         android:textSize="17sp"
@@ -201,36 +180,87 @@
         app:layout_constraintTop_toBottomOf="@+id/title_sigiriya"
         app:srcCompat="@drawable/wwarrow" />
 
-    <ImageButton
-        android:id="@+id/menu_sigiriya"
-        android:layout_width="61dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="-65dp"
-        android:background="@color/topicBackground"
-        android:contentDescription="@string/menu_sigiriya"
-        android:scaleType="centerInside"
-        app:layout_constraintStart_toEndOf="@+id/title_sigiriya"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mmenu" />
 
     <Button
         android:id="@+id/btnRead_sigiriya"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="105dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="157dp"
         android:backgroundTint="@color/buttonColor"
         android:text="View Ticket"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_ticket_sigiriya" />
+        app:layout_constraintStart_toEndOf="@+id/btn_ticket_sigiriya"
+        app:layout_constraintTop_toBottomOf="@+id/edt_children_no_sigiriya" />
 
     <TextView
+        android:id="@+id/nameSigiriya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="35dp"
+        android:text="Name : "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type_sigiriya" />
+
+    <ImageView
+        android:id="@+id/menu_sigiriya"
+        android:layout_width="71dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="-65dp"
+        app:layout_constraintStart_toEndOf="@+id/title_sigiriya"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mmenu" />
+
+    <EditText
+        android:id="@+id/edt_children_no_sigiriya"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="10dp"
+        android:hint="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/title_booking_sigiriya"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hotel_sigiriya" />
+
+    <EditText
+        android:id="@+id/edt_adults_no_sigiriya"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="10dp"
+        android:hint="0"
+        android:textSize="20sp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/children_sigiriya"
+        app:layout_constraintTop_toBottomOf="@+id/edt_children_no_sigiriya" />
+
+    <EditText
         android:id="@+id/edt_lf_sigiriya"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="-6dp"
+        android:ems="10"
+        android:hint="Tuorist Type"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/type_sigiriya"
         app:layout_constraintTop_toBottomOf="@+id/edt_adults_no_sigiriya" />
+
+    <EditText
+        android:id="@+id/enterNameSigiriya"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="Tuorist Name"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_lf_sigiriya" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

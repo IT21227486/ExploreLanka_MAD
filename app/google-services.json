@@ -1,15 +1,16 @@
 {
   "project_info": {
     "project_number": "574946687997",
+    "firebase_url": "https://explorelanka-bfc14-default-rtdb.firebaseio.com",
     "project_id": "explorelanka-bfc14",
     "storage_bucket": "explorelanka-bfc14.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:574946687997:android:fa954870ca0f48f001b794",
+        "mobilesdk_app_id": "1:574946687997:android:44e481b2f1e5450801b794",
         "android_client_info": {
-          "package_name": "com.example.ExploreLanka"
+          "package_name": "com.example.explorelanka"
         }
       },
       "oauth_client": [
