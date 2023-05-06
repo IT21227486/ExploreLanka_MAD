@@ -12,7 +12,8 @@
     <color name="topicBackground"> #BD9F9F </color>
     <color name="subtitlecolor"> #040342 </color>
     <color name="titlecolor">#02033D</color>
-    <color name="buttonColor">5F5B5B</color>
+    <color name="buttonColor">#5F5B5B</color>
     <color name="textColour">#3A2B2B</color>
+    <color name="divider_grey">#8e918f</color>
 
 </resources>

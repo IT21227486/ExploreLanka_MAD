@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#CDC5C5"
     android:backgroundTint="#CDC5C5"
-    tools:context=".worldEnd">
+    tools:context=".activities.worldEnd">
 
     <TextView
         android:id="@+id/title_wend"

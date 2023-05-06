@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">ExploreLanka</string>
-
     <string name="place">Visit Your Choice</string>
     <string name="sigiriya">Sigiriya</string>
     <string name="ravana">Ravana Cave</string>
@@ -14,26 +13,27 @@
     <string name="arrow_main">arrow</string>
     <string name="menu_main">menu</string>
 
-
+    <string name="edt_children_no_sigiriya"></string>
+    <string name="edt_adults_no_sigiriya"></string>
     <string name="title_sigiriya">Sigiriya</string>
-    <string name="pic_sigiriya">sigiriya</string>
-    <string name="dis_sigiriya">Sigiriya was built king kashyapa by the fifth century. Also called “Lion Rock”. It is one of the most valuable and historical place in Sri Lanka.</string>
+    <string name="LF_sigiriya"></string>
+    <string name="dis_sigiriya">Sigiriya was built king kashyapa by the fifth century. Also called Lion Rock. It is one of the most valuable and historical place in Sri Lanka.</string>
     <string name="location_sigiriya">Location : 16.8km from SriLanka via Inamaluwa</string>
     <string name="time_sigiriya">Timings: Opens daily from 7 AM to 5:30 PM.</string>
     <string name="visit_sigiriya">Best time to visit: This area will be early in the morning or late in the afternoon.</string>
     <string name="title_booking_sigiriya">Booking Details</string>
     <string name="children_sigiriya">Number of Children Tickets : </string>
     <string name="adult_sigiriya">Number of Adults Tickets : </string>
-    <string name="edt_children_no_sigiriya"></string>
-    <string name="edt_adults_no_sigiriya"></string>
     <string name="type_sigiriya">Tourist Type : </string>
-    <string name="LF_sigiriya"></string>
     <string name="btn_ticket_sigiriya">Book Tickets</string>
     <string name="btn_hotel_sigiriya">See Nearest Hotels.</string>
-    <string name="btnUpdate_sigiriya"> Update Booking Details </string>
-    <string name="btnDelete_sigiriya"> Delete Booking Details </string>
-    <string name="arrow_sigiriya">arrow</string>
-    <string name="menu_sigiriya">menu</string>
+    <string name="btnUpdate_sigiriya"> Update Booking</string>
+    <string name="btnDelete_sigiriya"> Delete Booking</string>
+    <string name="btnRead_sigiriya">View Ticket</string>
+    <string name="nameSigiriya">Name</string>
+    <string name="enterNameSigiriya"></string>
+    <string name="menu_sigiriya"></string>
+    <string name="my_button_description">This button opens the menu</string>
 
 
     <string name="title_ravana">Ravana Cave</string>
@@ -123,7 +123,7 @@
 
     <string name="title_wend">World End Nuwara Eliya</string>
     <string name="pic_wend">worldend</string>
-    <string name="dis_wend">One of the most jaw-dropping experience you can ever have in Sri Lanka is the World’s End on the Horton Plains.Tourists can see animals such as leopards and deer.</string>
+    <string name="dis_wend">One of the most jaw-dropping experience you can ever have in Sri Lanka is the World\’s End on the Horton Plains.Tourists can see animals such as leopards and deer.</string>
     <string name="location_wend">Location: The nearest station is in Nanu Oya.</string>
     <string name="visit_wend">Best Time to Visit: The best time to reach there is before 10:00 AM before.</string>
     <string name="title_booking_wend">Booking Details</string>
@@ -140,5 +140,10 @@
     <string name="btnDelete_wend"> Delete Booking Details </string>
     <string name="arrow_wend">arrow</string>
     <string name="menu_wend">menu</string>
+
+    <!--    <string name="rvtuorist"></string>-->
+    <string name="tvLoadingData">Loading Data....</string>
+    <string name="tvLoadingData1">Loading Data....</string>
+    <string name="listTuoName">Tourist Name</string>
 
 </resources>

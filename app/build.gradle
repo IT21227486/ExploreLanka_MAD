@@ -31,6 +31,12 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    testOptions {
+        emulatorSnapshots {
+            maxSnapshotsForTestFailures = 0
+        }
+    }
 }
 
 dependencies {
@@ -43,6 +49,11 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    implementation platform('com.google.firebase:firebase-bom:31.5.0')
+    implementation platform('com.google.firebase:firebase-bom:32.0.0')
     implementation 'com.google.firebase:firebase-database-ktx'
+
+    implementation 'com.google.code.gson:gson:2.8.9'
+
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
 }

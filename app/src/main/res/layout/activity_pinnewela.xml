@@ -8,7 +8,7 @@
     android:background="@color/myBackground"
     android:contentDescription="@string/menu_pinnewela"
     android:textAlignment="viewStart"
-    tools:context=".Pinnewela">
+    tools:context=".activities.Pinnewela">
 
     <TextView
         android:id="@+id/title_pinnewela"
