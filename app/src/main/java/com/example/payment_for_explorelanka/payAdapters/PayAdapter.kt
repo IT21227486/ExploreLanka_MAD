@@ -9,10 +9,21 @@ import com.example.payment_for_explorelanka.PayModel.PaymentModel
 import com.example.payment_for_explorelanka.R
 
 class PayAdapter( private val payList: ArrayList<PaymentModel>): RecyclerView.Adapter<PayAdapter.ViewHolder>(){
+
+     lateinit var pListner: onItemClickListner
+
+    interface onItemClickListner{
+        fun onItemClick(position: Int)
+    }
+
+    fun setOnItemClickListener(clickListner: onItemClickListner){
+        pListner = clickListner
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context)
             .inflate(R.layout.activity_payment_list_item, parent, false)
-        return ViewHolder(itemView)
+        return ViewHolder(itemView, pListner)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -26,10 +37,16 @@ class PayAdapter( private val payList: ArrayList<PaymentModel>): RecyclerView.Ad
         return payList.size
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View, clickListner: onItemClickListner) : RecyclerView.ViewHolder(itemView) {
         // Define ViewHolder here
 
         val tvCusName : TextView = itemView.findViewById(R.id.tvCusName)
+
+        init {
+            itemView.setOnClickListener {
+                clickListner.onItemClick(adapterPosition)
+            }
+        }
 
     }
 }

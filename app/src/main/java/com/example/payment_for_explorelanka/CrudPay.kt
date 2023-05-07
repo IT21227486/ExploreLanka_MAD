@@ -1,5 +1,6 @@
 package com.example.payment_for_explorelanka
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -39,6 +40,8 @@ class CrudPay : AppCompatActivity() {
 
         btn_save.setOnClickListener {
             savePaymentData()
+            val intent = Intent(this, FetchPaymentData::class.java)
+            startActivity(intent)
         }
 
 
@@ -59,16 +62,16 @@ class CrudPay : AppCompatActivity() {
             cusName.error =  "Please enter customer name"
         }
         if(customerNumber.isEmpty()){
-            cusNo.error =  "Please enter customer name"
+            cusNo.error =  "Please enter customer Number"
         }
         if(paymentType.isEmpty()){
-            payType.error =  "Please enter customer name"
+            payType.error =  "Please enter Payment Type"
         }
         if(bookingType.isEmpty()){
-            bookType.error =  "Please enter customer name"
+            bookType.error =  "Please enter Booking Type"
         }
         if(payAmount.isEmpty()){
-            amount.error =  "Please enter customer name"
+            amount.error =  "Please enter Oayment AMount"
         }
 
         val cusId = payDbref.push().key!!

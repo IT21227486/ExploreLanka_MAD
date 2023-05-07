@@ -4,8 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgrundColor"
     android:orientation="vertical"
     tools:context=".CrudPay">
+
+    <TextView
+        android:id="@+id/tv_PayWithCardTopic2"
+        android:layout_width="411dp"
+        android:layout_height="48dp"
+        android:background="@color/topic_backgound"
+        android:paddingTop="10dp"
+        android:text="Add payment Details"
+        android:textAlignment="center"
+        android:textColor="@color/TopicColor_ofEachPage"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/menu_btnCard2"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/topic_backgound"
+        android:contentDescription="@string/menue_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_icon" />
+
+    <ImageButton
+        android:id="@+id/cardPay_backBtn2"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#BC9E9E"
+        android:contentDescription="@string/cardPayBtn_discription"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_PayWithCardTopic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/back_button" />
 
     <EditText
         android:id="@+id/customerName"
@@ -13,13 +51,12 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:hint="Customer Name"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_PayWithCardTopic2" />
 
     <EditText
         android:id="@+id/CustomerNumber"
@@ -51,7 +88,7 @@
         android:layout_marginTop="24dp"
         android:hint="Booking Type"
         android:padding="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/payType"/>
+        app:layout_constraintTop_toBottomOf="@+id/payType" />
 
     <EditText
         android:id="@+id/amount"
@@ -61,7 +98,7 @@
         android:layout_marginTop="24dp"
         android:hint="Amount"
         android:padding="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/bookType"/>
+        app:layout_constraintTop_toBottomOf="@+id/bookType" />
 
     <Button
         android:id="@+id/save_button"
@@ -71,24 +108,10 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="72dp"
         android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/btn_color_of_payment_pages"
         android:text="Save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/amount" />
-
-    <Button
-        android:id="@+id/delete_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="83dp"
-        android:text="Delete"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/save_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

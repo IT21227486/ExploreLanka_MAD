@@ -1,5 +1,6 @@
 package com.example.payment_for_explorelanka
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -51,6 +52,22 @@ class FetchPaymentData : AppCompatActivity() {
                     }
                     val pAdapter = PayAdapter(payList)
                     payRecyclerView.adapter = pAdapter
+
+                    pAdapter.setOnItemClickListener(object : PayAdapter.onItemClickListner{
+                        override fun onItemClick(position: Int) {
+                            val intent = Intent(this@FetchPaymentData, PaymentDetails::class.java)
+                            //put extra
+                            intent.putExtra("cusID", payList[position].Customerid)
+                            intent.putExtra("cusName", payList[position].CustomerName)
+                            intent.putExtra("cusNo", payList[position].CustomerNum)
+                            intent.putExtra("pay_Type", payList[position].payType)
+                            intent.putExtra("booking_Type", payList[position].bookType)
+                            intent.putExtra("amount", payList[position].amount)
+
+                            startActivity(intent)
+                        }
+
+                    })
 
                     payRecyclerView.visibility = View.VISIBLE
                     tvPayLoadingData.visibility = View.GONE
