@@ -21,6 +21,10 @@ class MainActivity : AppCompatActivity() {
 
         val payFirebase : DatabaseReference = FirebaseDatabase.getInstance().getReference()
 
+        // Retrieve the amount from the Intent extras
+        val amount = intent.getStringExtra("amount")
+
+        //if (amount != null) amount else "200"
 
 
         // Initialize the back button
@@ -47,6 +51,7 @@ class MainActivity : AppCompatActivity() {
         val cardPay = findViewById<Button>(R.id.cardPayment_btn2)
         cardPay.setOnClickListener {
             val intent = Intent(this, CardPaymentActivity::class.java)
+            intent.putExtra("amount", amount) // Pass the amount as an extra to CardPaymentActivity
             startActivity(intent)
         }
 
@@ -54,15 +59,24 @@ class MainActivity : AppCompatActivity() {
         val payPalPay = findViewById<Button>(R.id.paypalPay_btn)
         payPalPay.setOnClickListener {
             val intent = Intent(this, PaypalActivity::class.java)
+            intent.putExtra("amount", amount) // Pass the amount as an extra to paypalActivity
             startActivity(intent)
         }
 
         // Set up the click listeners for cash Payment
         val cashPay = findViewById<Button>(R.id.cashPay_btn)
         cashPay.setOnClickListener {
-            val intent = Intent(this, ShowPayInfo::class.java)
+            val intent = Intent(this, CashPaymentActivity::class.java)
             startActivity(intent)
         }
+
+        val payMenu = findViewById<ImageButton>(R.id.menu_btnPayment)
+
+        payMenu.setOnClickListener{
+            val intent = Intent(this, MarketPlace_activity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

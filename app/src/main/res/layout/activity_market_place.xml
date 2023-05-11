@@ -40,11 +40,10 @@
         android:layout_width="61dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
-        android:layout_marginBottom="20dp"
         android:backgroundTint="#BC9E9E"
         android:contentDescription="@string/marketPlc_BckBtn_discription"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/marketPlcaeDesc_tv"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_MarketPlaceTopic"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/back_button" />
 
@@ -89,13 +88,14 @@
         android:layout_width="188dp"
         android:layout_height="193dp"
         android:layout_marginTop="13dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="28dp"
         android:contentDescription="@string/seaBtn"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@+id/medicineMarket_imgBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/marketPlcaeDesc_tv"
+        app:layout_constraintVertical_bias="0.833"
         app:srcCompat="@drawable/seafoodmarket_img" />
 
     <ImageButton
@@ -104,7 +104,7 @@
         android:layout_height="193dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="32dp"
         android:contentDescription="@string/textileBtn"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@+id/spicesMarket_imgBtn"

@@ -35,6 +35,14 @@ class CardPaymentActivity : AppCompatActivity() {
             }
         }
 
+
+        // Retrieve the amount from the Intent extras
+        val amount = intent.getStringExtra("amount")
+
+        // Initialize the Amount Textfield
+        val payAmount = findViewById<EditText>(R.id.totalIncardPay_value)
+
+
         val cardPay = findViewById<Button>(R.id.finalPay_btn)
         val nameOnCartText = findViewById<EditText>(R.id.nameOnCart_text)
         val cardNumberText = findViewById<EditText>(R.id.cardNumber_text)
@@ -61,6 +69,11 @@ class CardPaymentActivity : AppCompatActivity() {
                 override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
             })
         }
+
+
+        // Set the amount with a dollar sign in the EditText
+        payAmount.setText("$" + amount)
+
 
         cardPay.setOnClickListener {
             // Check if any EditText is empty

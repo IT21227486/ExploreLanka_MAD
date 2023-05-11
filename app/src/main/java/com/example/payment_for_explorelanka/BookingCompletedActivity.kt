@@ -1,5 +1,6 @@
 package com.example.payment_for_explorelanka
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
@@ -8,6 +9,7 @@ import androidx.activity.OnBackPressedCallback
 class BookingCompletedActivity : AppCompatActivity() {
 
     private lateinit var backButton: ImageButton
+    private lateinit var crudButton: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +30,13 @@ class BookingCompletedActivity : AppCompatActivity() {
                 // Call the finish() method to close the activity
                 finish()
             }
+        }
+
+        crudButton = findViewById(R.id.menu_btnComplete)
+
+        crudButton.setOnClickListener{
+            val intent = Intent(this, ShowPayInfo::class.java)
+            startActivity(intent)
         }
 
 

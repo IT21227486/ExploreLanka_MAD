@@ -49,7 +49,7 @@
         android:layout_width="369dp"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
         android:hint="Name"
@@ -103,7 +103,7 @@
         android:layout_width="283dp"
         android:layout_height="148dp"
         android:layout_marginStart="65dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="65dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,11 +126,11 @@
 
     <Spinner
         android:id="@+id/rsDollar_dropDown"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_width="116dp"
+        android:layout_height="51dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="276dp"
+        android:layout_marginEnd="250dp"
         android:entries="@array/invest_cashType"
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
@@ -142,12 +142,14 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="32dp"
         android:backgroundTint="@color/ButTon_60_30"
         android:text="@string/investPay_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/investConditon_CB" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

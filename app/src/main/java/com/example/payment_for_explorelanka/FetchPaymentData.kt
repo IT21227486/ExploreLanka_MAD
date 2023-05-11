@@ -57,7 +57,7 @@ class FetchPaymentData : AppCompatActivity() {
                         override fun onItemClick(position: Int) {
                             val intent = Intent(this@FetchPaymentData, PaymentDetails::class.java)
                             //put extra
-                            intent.putExtra("cusID", payList[position].Customerid)
+                            intent.putExtra("cusId", payList[position].Customerid)
                             intent.putExtra("cusName", payList[position].CustomerName)
                             intent.putExtra("cusNo", payList[position].CustomerNum)
                             intent.putExtra("pay_Type", payList[position].payType)

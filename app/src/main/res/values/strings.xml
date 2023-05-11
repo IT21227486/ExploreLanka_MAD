@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Payment_for_ExploreLanka</string>
+    <string name="app_name">Explore Lanka</string>
 
     <string name="payment_method">Payment Method</string>
     <string name="paymentMethod_backBtnDescription">Go to the previous/back page.</string>

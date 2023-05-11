@@ -33,12 +33,19 @@ class PaypalActivity : AppCompatActivity() {
             }
         }
 
+        // Retrieve the amount from the Intent extras
+        val amount = intent.getStringExtra("amount")
+
+        // Initialize the Amount Textfield
+        val paypalTotal = findViewById<EditText>(R.id.totalInPaypalPay_value)
+
+
         val paypalPay = findViewById<Button>(R.id.paypalProceed_btn)
         val textView: TextView = findViewById(R.id.paypalOfficial_text);
         val nameOnOwner = findViewById<EditText>(R.id.nameOnPaypal_text)
         val emailPaypal = findViewById<EditText>(R.id.emailOnPaypal_text)
         val paypalPhone = findViewById<EditText>(R.id.paypalOwnerPhone_text)
-        val paypalTotal = findViewById<EditText>(R.id.totalInPaypalPay_value)
+
 
         // Initialize the array of EditTexts
         val editTexts = arrayOf(nameOnOwner, emailPaypal, paypalPhone, paypalTotal)
@@ -69,6 +76,8 @@ class PaypalActivity : AppCompatActivity() {
 
         val text = "Use below information in your paypal transfer.\\nEmail: explorelanka@gmail.com\\nuserID: Eplore Lanka"
 
+        // Set the amount with a dollar sign in the EditText
+        paypalTotal.setText("$" + amount)
 
 
         paypalPay.setOnClickListener {
