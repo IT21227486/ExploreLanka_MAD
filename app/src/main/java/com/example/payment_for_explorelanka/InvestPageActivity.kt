@@ -81,8 +81,7 @@ class InvestPageActivity : AppCompatActivity() {
                 // Launch the PaymentActivity and pass the amount as an extra
                 val intent = Intent(this, MainActivity::class.java)
                 intent.putExtra("amount", amount)
-                startActivity(intent)
-            }
+                startActivity(intent)            }
         }
 
 
