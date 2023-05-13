@@ -86,6 +86,5 @@ class InvestPageActivity : AppCompatActivity() {
 
 
 
-
     }
 }

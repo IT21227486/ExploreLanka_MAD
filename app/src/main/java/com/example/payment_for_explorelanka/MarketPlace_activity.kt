@@ -81,7 +81,14 @@ class MarketPlace_activity : AppCompatActivity() {
             // Start the new activity
             startActivity(intent)
         }
+        
 
+        val notify = findViewById<ImageButton>(R.id.menu_btnMarket)
+
+        notify.setOnClickListener{
+            val intent = Intent(this, NotificationActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }
