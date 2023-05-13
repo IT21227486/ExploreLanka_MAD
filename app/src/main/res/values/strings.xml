@@ -145,5 +145,14 @@
     <string name="tvLoadingData">Loading Data....</string>
     <string name="tvLoadingData1">Loading Data....</string>
     <string name="listTuoName">Tourist Name</string>
+    <string name="explore_lanka">Explore Lanka</string>
+    <string name="payment">Payment</string>
+    <string name="login">LogIn</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="SUBMIT">SUBMIT</string>
+    <string name="REGISTER">REGISTER</string>
+    <string name="register_form">REGISTER</string>
 
 </resources>
