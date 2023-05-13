@@ -35,6 +35,7 @@
     <string name="menu_sigiriya"></string>
     <string name="my_button_description">This button opens the menu</string>
     <string name="sigiriyaId"></string>
+    <string name="btnPay_sigiriya">Pay Ticket</string>
 
 
     <string name="title_ravana">Ravana Cave</string>
