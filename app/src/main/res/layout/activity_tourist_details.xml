@@ -10,9 +10,11 @@
         android:id="@+id/btnUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="69dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="102dp"
+        android:backgroundTint="@color/buttonColor"
         android:text="Update"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -22,7 +24,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="47dp"
         android:layout_marginTop="102dp"
+        android:backgroundTint="@color/buttonColor"
         android:text="Delete"
+        android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/btnUpdate"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -59,7 +63,7 @@
                     android:layout_height="62dp"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Emp id"
+                    android:text="Tourist ID"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
@@ -71,7 +75,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvEmpId"
+                    android:id="@+id/sigiriyaId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -108,7 +112,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Emp Name"
+                    android:text="No of Children Tickets"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
@@ -120,7 +124,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvEmpName"
+                    android:id="@+id/edt_children_no_sigiriya"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -158,7 +162,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Emp Age"
+                    android:text="No of Adults Tickets"
                     android:textColor="@color/black"
                     android:textSize="15sp"
 
@@ -173,7 +177,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvEmpAge"
+                    android:id="@+id/edt_adults_no_sigiriya"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -213,7 +217,7 @@
                     android:layout_gravity="center"
 
                     android:gravity="center"
-                    android:text="Emp Salary"
+                    android:text="Tourist Type"
                     android:textColor="@color/black"
                     android:textSize="15sp"
 
@@ -228,7 +232,61 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvEmpSalary"
+                    android:id="@+id/LF_sigiriya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:background="@color/divider_grey">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:gravity="center"
+                    android:text="Tourist Name"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <TextView
+                    android:id="@+id/enterNameSigiriya"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

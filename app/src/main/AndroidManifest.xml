@@ -12,14 +12,14 @@
         android:theme="@style/Theme.ExploreLanka"
         tools:targetApi="31">
         <activity
+            android:name=".activities.update_dialog"
+            android:exported="false" />
+        <activity
             android:name=".activities.tourist_details"
             android:exported="false" />
         <activity
             android:name=".activities.tuo_list_item"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".ReadData"-->
-<!--            android:exported="false" />-->
         <activity
             android:name=".activities.Fetching"
             android:exported="false" />

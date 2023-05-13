@@ -141,32 +141,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/enterNameSigiriya" />
 
-    <Button
-        android:id="@+id/btnUpdate_sigiriya"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="3dp"
-        android:backgroundTint="@color/buttonColor"
-        android:text="Update Booking"
-        android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_ticket_sigiriya" />
-
-    <Button
-        android:id="@+id/btnDelete_sigiriya"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginBottom="79dp"
-        android:backgroundTint="@color/buttonColor"
-        android:text="Delete Booking"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageButton
         android:id="@+id/arrow_sigiriya"
         android:layout_width="61dp"
@@ -221,6 +195,7 @@
         android:layout_marginTop="10dp"
         android:hint="0"
         android:textSize="20sp"
+        android:inputType="number"
         app:layout_constraintStart_toEndOf="@+id/title_booking_sigiriya"
         app:layout_constraintTop_toBottomOf="@+id/btn_hotel_sigiriya" />
 

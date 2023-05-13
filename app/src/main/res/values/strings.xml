@@ -13,10 +13,10 @@
     <string name="arrow_main">arrow</string>
     <string name="menu_main">menu</string>
 
-    <string name="edt_children_no_sigiriya"></string>
-    <string name="edt_adults_no_sigiriya"></string>
+    <string name="edt_children_no_sigiriya">0</string>
+    <string name="edt_adults_no_sigiriya">0</string>
     <string name="title_sigiriya">Sigiriya</string>
-    <string name="LF_sigiriya"></string>
+    <string name="edt_lf_sigiriya">Tourist Type</string>
     <string name="dis_sigiriya">Sigiriya was built king kashyapa by the fifth century. Also called Lion Rock. It is one of the most valuable and historical place in Sri Lanka.</string>
     <string name="location_sigiriya">Location : 16.8km from SriLanka via Inamaluwa</string>
     <string name="time_sigiriya">Timings: Opens daily from 7 AM to 5:30 PM.</string>
@@ -31,31 +31,32 @@
     <string name="btnDelete_sigiriya"> Delete Booking</string>
     <string name="btnRead_sigiriya">View Ticket</string>
     <string name="nameSigiriya">Name</string>
-    <string name="enterNameSigiriya"></string>
+    <string name="enterNameSigiriya">Tourist Name</string>
     <string name="menu_sigiriya"></string>
     <string name="my_button_description">This button opens the menu</string>
+    <string name="sigiriyaId"></string>
 
 
     <string name="title_ravana">Ravana Cave</string>
-    <string name="pic_ravana">ravana</string>
     <string name="dis_ravana">Historians suggest that King Ravana used the cave as a hiding place for Princess Sita. The tunnels in the cave are the representation of Ravana architectural genius</string>
     <string name="location_ravana">Location : 2 km from Ella town.</string>
     <string name="time_ravana">Timings: Opens daily.</string>
     <string name="visit_ravana">Best time to visit: This area will be early in the morning or late in the afternoon.</string>
     <string name="title_booking_ravana">Booking Details</string>
     <string name="children_ravana">Number of Children Tickets : </string>
-    <string name="edt_children_no_ravana">0</string>
     <string name="adult_ravana">Number of Adults Tickets : </string>
-    <string name="edt_adults_no_ravana">0</string>
     <string name="type_ravana">Tourist Type : </string>
-    <string name="local_ravana">Local</string>
-    <string name="foreign_ravana">Foreign</string>
     <string name="btn_ticket_ravana">Book Tickets</string>
     <string name="btn_hotel_ravana">See nearest hotels</string>
     <string name="btnUpdate_ravana"> Update Booking Details </string>
     <string name="btnDelete_ravana"> Delete Booking Details </string>
     <string name="arrow_ravana">arrow</string>
     <string name="menu_ravana">menu</string>
+    <string name="edt_children_no_ravana">0</string>
+    <string name="edt_adults_no_ravana">0</string>
+    <string name="edt_lf_ravana">Tourist Type</string>
+    <string name="nameRavana">Tourist Name</string>
+    <string name="enterNameRavana">Tourist Name</string>
 
 
     <string name="title_yala">Yala National Park</string>
@@ -145,5 +146,8 @@
     <string name="tvLoadingData">Loading Data....</string>
     <string name="tvLoadingData1">Loading Data....</string>
     <string name="listTuoName">Tourist Name</string>
+
+    <string name="btnUpdate">Update</string>
+    <string name="btnDelete">Delete</string>
 
 </resources>

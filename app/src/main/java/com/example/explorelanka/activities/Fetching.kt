@@ -1,5 +1,6 @@
 package com.example.explorelanka.activities
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -50,21 +51,22 @@ class Fetching : AppCompatActivity() {
                     val mAdapter = TuoAdapter(tuoList)
                     tuoRecyclerView.adapter = mAdapter
 
-//                    mAdapter.setOnItemClickListener(object : TuoAdapter.onItemClickListener{
-//                        override fun onItemClick(position: Int) {
-//
-//                            val intent = Intent(this@Fetching, tourist_details::class.java)
-//
-//                            //put extras
+                    mAdapter.setOnItemClickListener(object : TuoAdapter.onItemClickListener{
+                        override fun onItemClick(position: Int) {
+
+                            val intent = Intent(this@Fetching, tourist_details::class.java)
+
+                            //put extras
 //                            intent.putExtra("sigiriyaId", tuoList[position].sigiriyaId)
-//                            intent.putExtra("childrenTicketSigiriya", tuoList[position].childrenTicketSigiriya)
-//                            intent.putExtra("adultTicketSigiriya", tuoList[position].adultTicketSigiriya)
-//                            intent.putExtra("typeSigiriya", tuoList[position].typeSigiriya)
-//                            intent.putExtra("nameSigiriya", tuoList[position].nameSigiriya)
-//                            startActivity(intent)
-//                        }
-//
-//                    })
+                            intent.putExtra("sigiriyaId", tuoList[position].sigiriyaId)
+                            intent.putExtra("childrenTicketSigiriya", tuoList[position].childrenTicketSigiriya)
+                            intent.putExtra("adultTicketSigiriya", tuoList[position].adultTicketSigiriya)
+                            intent.putExtra("typeSigiriya", tuoList[position].typeSigiriya)
+                            intent.putExtra("nameSigiriya", tuoList[position].nameSigiriya)
+                            startActivity(intent)
+                        }
+
+                    })
 
                     tuoRecyclerView.visibility = View.VISIBLE
                     tvLoadingData.visibility = View.GONE

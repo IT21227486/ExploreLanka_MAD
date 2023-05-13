@@ -1,0 +1,9 @@
+package com.example.explorelanka.models
+
+data class RavanaCaveModel(
+    var ravanaCaveId: String? = null,
+    var childrenTicketRavanaCave: String? = null,
+    var adultTicketRavanaCave: String? = null,
+    var typeRavanaCave: String? = null,
+    var nameRavanaCave: String? = null
+)
