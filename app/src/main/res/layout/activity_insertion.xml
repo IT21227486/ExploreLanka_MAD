@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/insertion_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activities.InsertionActivity">
+
+    <EditText
+        android:id="@+id/etHotel_clientName"
+        android:layout_width="378dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:hint="Enter name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etHotel_clientPhoneNo"
+        android:layout_width="376dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter Phone"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etHotel_clientName" />
+
+    <EditText
+        android:id="@+id/etHotel_clientAmount"
+        android:layout_width="380dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter Amount"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etHotel_clientPhoneNo" />
+
+    <Button
+        android:id="@+id/Hotel_clientbtnSave"
+        android:layout_width="162dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="50dp"
+        android:text="Save Data"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etHotel_clientAmount" />
+</androidx.constraintlayout.widget.ConstraintLayout>

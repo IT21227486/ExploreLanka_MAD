@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">exploreHotel</string>
+    <string name="Hotel_textView">exploreHotel</string>
+    <string name="Hotel_btnInsertData">exploreHotel</string>
+    <string name="Hotel_btnFetchData">exploreHotel</string>
+
+    <string name="etHotel_clientName">exploreHotel</string>
+    <string name="etHotel_clientPhoneNo">exploreHotel</string>
+    <string name="etHotel_clientAmount">exploreHotel</string>
+    <string name="Hotel_clientbtnSave">exploreHotel</string>
+
+</resources>
