@@ -12,6 +12,9 @@
         android:theme="@style/Theme.ExploreReview"
         tools:targetApi="31">
         <activity
+            android:name=".activities.Update_Dialog"
+            android:exported="false" />
+        <activity
             android:name=".activities.EmployeeFDetails"
             android:exported="false" />
         <activity

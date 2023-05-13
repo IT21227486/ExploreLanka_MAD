@@ -16,4 +16,8 @@
     <string name="btnFUpdate">Update FeedBack</string>
     <string name="btnFDelete">Delete FeedBack</string>
 
+    <string name="etFREmpName">Tourist Name</string>
+    <string name="etFREmpMag">Enter Your Feedback</string>
+    <string name="btnFRUpdateData">Update Data</string>
+
 </resources>
