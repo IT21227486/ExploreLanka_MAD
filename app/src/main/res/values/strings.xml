@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ExploreReview</string>
+
+    <string name="btnInsertFeedback">Enter Your FeedBack</string>
+    <string name="btnViewFeedback">View FeedBack</string>
+
+    <string name="TitleRFeedback">Enter Your Feedback,</string>
+    <string name="etREmpName">Enter Name</string>
+    <string name="etREmpMsg">Enter Feedback</string>
+    <string name="btnReviewSave">Send FeedBack</string>
+
+    <string name="tvREmpName">Tourist Name</string>
+
+    <string name="tvFLoadingData">Loading Data.....</string>
+
+    <string name="btnFUpdate">Update FeedBack</string>
+    <string name="btnFDelete">Delete FeedBack</string>
+
+</resources>
