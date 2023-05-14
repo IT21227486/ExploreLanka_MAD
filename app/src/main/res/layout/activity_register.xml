@@ -106,7 +106,7 @@ tools:context=".Register">
             android:id="@+id/registerButton"
             android:textSize="18sp"
             android:layout_marginTop="30dp"
-            android:backgroundTint="@color/lavender"
+            android:backgroundTint="@color/blue"
             app:cornerRadius = "20dp"/>
 
         <TextView
@@ -124,7 +124,7 @@ tools:context=".Register">
             android:id="@+id/logButton"
             android:textSize="18sp"
             android:layout_marginTop="10dp"
-            android:backgroundTint="@color/lavender"
+            android:backgroundTint="@color/blue"
             app:cornerRadius = "20dp"/>
 
 

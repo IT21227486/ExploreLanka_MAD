@@ -27,6 +27,12 @@ package com.example.explorelanka
             val signInPassword : EditText = findViewById(R.id.Password)
             val signInButton : Button = findViewById(R.id.Submit)
 
+            val myButton = findViewById<Button>(R.id.REGISTER)
+            myButton.setOnClickListener {
+                // Define your navigation logic here
+                val intent = Intent(this, Register::class.java)
+                startActivity(intent)
+            }
 
             signInButton.setOnClickListener{
                 val email = signInEmail.text.toString()
@@ -55,6 +61,8 @@ package com.example.explorelanka
                         }else{
                             Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show()
                         }
+
+
                     }
                 }
             }
